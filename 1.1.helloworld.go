@@ -1,7 +1,5 @@
 package main
-
-import "fmt" // package untuk i/o
-
+import "fmt"
 func main() {
-	fmt.Println("Hello World")
+	fmt.Println("Hello World!!!")
 }
