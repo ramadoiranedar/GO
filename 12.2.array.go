@@ -7,7 +7,13 @@ func main() {
 		"Damar",
 	}
 	fmt.Println(names)
-	
+
 	var lengthNames = len(names)
 	fmt.Println(lengthNames)
+
+	var dummy = [1000]string {
+
+	}
+	var lengthDummy = len(dummy)
+	fmt.Println(lengthDummy)
 }
