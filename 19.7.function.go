@@ -5,7 +5,13 @@ package main
 import "fmt"
 
 func main() {
-	result := sumAll(0, 10, 20, 30, 40 ,60)
+	// sample 1
+	result := sumAll(0, 10, 20, 30, 40, 2000)
+	fmt.Println("Result : ", result)
+
+	// sample 2
+	slice := []int{0, 10, 20, 30, 40, 1000}
+	result = sumAll(slice...)
 	fmt.Println("Result : ", result)
 }
 
