@@ -1,4 +1,4 @@
-// pointer
+// pointer FUNCTION
 // & pengambil data
 // * sumber data
 // Waring: Disarankan pada Struct data besar (banyak Data) lebih baik menggunakan Pointer irit Memory
@@ -8,6 +8,10 @@ import "fmt"
 
 type Address struct {
 	City, Province, Country string
+}
+
+func ChangeCountryToIndonesia(a *Address) {
+	a.Country = "Madura"
 }
 
 func main() {
@@ -51,4 +55,20 @@ func main() {
 	// &{Solo Malang Purwokerto}
 	// &{Solo Malang Purwokerto}
 	// &{Surabaya  }
+
+	var address = Address{
+		City:     "Subang",
+		Province: "Jawa Barat",
+		Country:  "",
+	}
+
+	var addressPointer *Address = &address
+	ChangeCountryToIndonesia(addressPointer)
+	fmt.Println(address)
+
+	// {Solo Malang Purwokerto}
+	// &{Solo Malang Purwokerto}
+	// &{Solo Malang Purwokerto}
+	// &{Surabaya  }
+	// {Subang Jawa Barat Madura}
 }

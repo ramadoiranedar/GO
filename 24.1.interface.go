@@ -2,6 +2,7 @@
 // BIASA DIGUNAKAN FUNCTION GENERAL YANG MENGGUNAKAN CONTRACT
 
 package main
+
 import "fmt"
 
 type HasName interface {
@@ -16,7 +17,7 @@ type Person struct {
 	Name string
 }
 
-// THIS CONTRACT FOR THE NAME!
+// THIS CONTRACT FOR THE GETNAME! MUST BE RETURN STRING AND SAME NAME
 func (person Person) GetName() string {
 	return person.Name
 }
