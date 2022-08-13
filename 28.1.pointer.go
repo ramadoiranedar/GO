@@ -1,6 +1,6 @@
 // pointer
-// & pengambil data
 // * sumber data
+// & pengambil data
 // Waring: Disarankan pada Struct data besar (banyak Data) lebih baik menggunakan Pointer irit Memory
 package main
 

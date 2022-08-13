@@ -1,5 +1,7 @@
 package main
+
 import "fmt"
+
 func main() {
 	months := [...]string{
 		"January",
@@ -36,9 +38,9 @@ func main() {
 	// Make new Slice is safety
 	// it will valid for use LOOPING
 	newSlice := make([]string, 2, 5)
-	newSlice[0] = "Ario" 
+	newSlice[0] = "Ario"
 	newSlice[1] = "Damar"
-	fmt.Println(newSlice) 
+	fmt.Println(newSlice)
 
 	// duplicate or copy slice,
 	// make sure the capacity of slice
@@ -47,7 +49,7 @@ func main() {
 	fmt.Println(copySlice)
 
 	// different array and slice
-	thisARR := [...]int{1, 2, 3, 4, 5}
+	thisARR := [...]int{1, 2, 3, 4, 5} // got index
 	thisSlice := []int{1, 2, 3, 4, 5}
 	fmt.Println("this array: ", thisARR)
 	fmt.Println("this slice:", thisSlice)

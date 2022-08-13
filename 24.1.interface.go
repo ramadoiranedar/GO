@@ -17,7 +17,7 @@ type Person struct {
 	Name string
 }
 
-// THIS CONTRACT FOR THE GETNAME! MUST BE RETURN STRING AND SAME NAME
+// THIS CONTRACT FOR THE GETNAME! MUST BE  SAME NAME AND SAME RETURN
 func (person Person) GetName() string {
 	return person.Name
 }
