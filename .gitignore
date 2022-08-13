@@ -15,6 +15,3 @@ node_modules
 
 # Ignore gitconfig
 .gitconfig
-
-# Ignore
-.gitignore
